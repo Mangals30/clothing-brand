@@ -16,4 +16,4 @@ GET /availability/:manufacturer – Return a list of availability info.
 
 The project is deployed in heroku under the below link.
 
-[Chat App](https://clothing-categories.herokuapp.com/)
+[Clothing brand](https://clothing-categories.herokuapp.com/)
