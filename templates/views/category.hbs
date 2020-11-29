@@ -1,0 +1,33 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="main-content">
+    <div class="header">{{>header}}</div>
+    <h1 class="title">{{title}}</h1>
+    <div class="product-container">
+      <div class="product">
+        <div>
+          <img src={{cloth.image}} alt={{cloth.alt}}>
+          <p>Name: {{cloth.name}}</p>
+          <p>Price: {{cloth.price}}&euro;</p>
+          <p>Brand: {{cloth.manufacturer}}</p>
+          <p>Type: {{cloth.type}}</p>
+          <div class="colors">Colors:
+            {{#each cloth.color}}
+            <div class="color" style="background-color: {{this}};"></div>
+            {{/each}}
+          </div>
+          <p>Availibility : <span style="font-size: 20px; color: {{cloth.stockCol}} ">{{cloth.availability}}</span></p>
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+</body>
