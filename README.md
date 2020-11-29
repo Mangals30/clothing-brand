@@ -5,6 +5,8 @@ A clothing brand website in which the clothing categories are jackets, accessori
 Data is fetched from the api to display all the categories as well as a single category.
 Clothing brands are also displayed. The categories of each brand has also been implemented.
 
+API used for the implementation is as below: 
+
 [API](https://bad-api-assignment.reaktor.com/)
 
 End points of the apis are as below :
